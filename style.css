@@ -1,0 +1,143 @@
+:root {
+  --body-bg-color: hsl(30, 38%, 92%);
+  --right-side-bg-color: hsl(0, 0%, 100%);
+  --font-color: hsl(228, 12%, 48%);
+
+  --green-color: hsl(158, 36%, 37%);
+  --d-green-color: hsl(158, 42%, 18%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  font-family: Montserrat, sans-serif;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--body-bg-color);
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 1rem;
+}
+
+.container > * {
+  max-width: 330px;
+}
+
+.left-side .product-image {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.right-side {
+  padding: 1.75rem 1.5rem 1.5rem;
+  background-color: var(--right-side-bg-color);
+}
+
+.product-category {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+}
+
+.title {
+  margin: 1rem 0 1.5rem;
+}
+
+.description {
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.375rem;
+}
+
+.price > * {
+  margin: 0;
+}
+
+.price .current-price {
+  color: var(--green-color);
+}
+
+.add-to-cart-btn {
+  width: 100%;
+  gap: 0.75rem;
+  padding-block: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--d-green-color);
+  background-color: var(--green-color);
+}
+
+.add-to-cart-btn .logo-btn {
+  width: unset;
+}
+
+.add-to-cart-btn .label-btn {
+  font-size: 1rem;
+  color: var(--right-side-bg-color);
+}
+
+/* Reusable Classes */
+.f-gray {
+  color: var(--font-color);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.fraunces-font {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: Fraunces, sans-serif;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 48em) {
+  html {
+    font-size: 16px;
+  }
+
+  .container {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .container > * {
+    max-width: 320px;
+  }
+
+  .left-side .product-image {
+    height: 100%;
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+
+  .fraunces-font {
+    font-size: 2.5rem;
+  }
+}

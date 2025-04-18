@@ -12,44 +12,51 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat|Fraunces"
+    />
+
     <title>Frontend Mentor | Product preview card component</title>
 
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="d-flex">
     <main class="container">
       <div class="left-side">
-        <img
-          class="product-image"
-          loading="lazy"
-          srcset="
-            ./images/image-product-desktop.jpg 600w,
-            ./images/image-product-mobile.jpg  686w
-          "
-          sizes="(min-width: 48em) 600px, 686px"
-          src="./images/image-product-mobile.jpg"
-          alt="Gabrielle Essence Eau De Parfum Bottle"
-        />
+        <picture>
+          <source
+            media="(min-width: 48em)"
+            srcset="./images/image-product-desktop.jpg"
+          />
+          <img
+            loading="lazy"
+            class="product-image"
+            src="./images/image-product-mobile.jpg"
+            alt="Gabrielle Essence Eau De Parfum Bottle"
+          />
+        </picture>
       </div>
       <div class="right-side">
-        <p class="name">Perfume</p>
-        <h1 class="title">Gabrielle Essence Eau De Parfum</h1>
-        <p class="description">
+        <p class="product-category bold f-gray">Perfume</p>
+        <h1 class="title fraunces-font">Gabrielle Essence Eau De Parfum</h1>
+        <p class="description bold f-gray">
           A floral, solar and voluptuous interpretation composed by Olivier
           Polge, Perfumer-Creator for the House of CHANEL.
         </p>
         <div class="price">
-          <p class="current-price">$149.99</p>
-          <p class="previous-price">$169.99</p>
+          <p class="current-price fraunces-font">$149.99</p>
+          <p class="previous-price bold f-gray">$169.99</p>
         </div>
-        <button class="add-to-cart-btn">
+        <button class="add-to-cart-btn d-flex">
           <img
             class="logo-btn"
             src="./images/icon-cart.svg"
             alt="cart icon"
             class="cart-icon"
+            loading="lazy"
           />
-          <span class="label-btn">Add to Cart</span>
+          <span class="label-btn bold">Add to Cart</span>
         </button>
       </div>
     </main>
