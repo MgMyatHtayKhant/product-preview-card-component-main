@@ -19,7 +19,6 @@ html {
 body {
   margin: 0;
   width: 100%;
-  height: 100vh;
   background-color: var(--body-bg-color);
 }
 
@@ -32,7 +31,7 @@ img {
 .container {
   display: flex;
   flex-direction: column;
-  margin-inline: 1rem;
+  margin: 2rem 1rem;
 }
 
 .left-side .product-image {
@@ -117,6 +116,13 @@ img {
 @media only screen and (min-width: 48em) {
   html {
     font-size: 16px;
+  }
+
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .container {
