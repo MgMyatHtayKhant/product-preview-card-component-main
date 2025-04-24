@@ -26,8 +26,8 @@ This is my fifth project and it's responsive using flexbox.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/MgMyatHtayKhant/product-preview-card-component-main)
-- Live Site URL: [Add live site URL here](https://previewing-card.netlify.app/)
+- Solution URL: [Solution URL here](https://github.com/MgMyatHtayKhant/product-preview-card-component-main)
+- Live Site URL: [Live site URL here](https://previewing-card.netlify.app/)
 
 ## My process
 
@@ -76,7 +76,7 @@ I learned a lot about flexbox, media query and resuable code.
 ## Author
 
 - Website - [Saul](https://saul-homepage.netlify.app/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Saul](https://www.frontendmentor.io/profile/MgMyatHtayKhant)
 
 ## Acknowledgments
 
